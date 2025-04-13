@@ -1,4 +1,49 @@
-h1{
-    color:blueviolet;
-    font-size: 200px;
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 40px;
+    padding: 0;
+}
+
+/* Anchor back to index */
+a[href="index.html"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a[href="index.html"]:hover {
+    text-decoration: underline;
+}
+
+/* Project container styling */
+div {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007BFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Project title links */
+div a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+div a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Paragraph description */
+p {
+    margin-top: 10px;
+    line-height: 1.5;
 }
