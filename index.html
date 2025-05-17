@@ -3,11 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="practice1.css">
+    <link rel="javascript" type="text/javascript" href="javascript.js">
+    <link rel="stylesheet" type="text/css" href="css/practice1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Index</title>
 </head>
 <body>
-    <a href="projects.html">Go to Projects</a>
+    <a href="projects.html">Projects</a>
 
+
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="aboutme.html">About Me</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+  <button id="theme-toggle" class="button" style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+    Toggle Theme
+  </button>
+
+  <div class="container">
+    <header style="text-align: center; margin-bottom: 2rem;">
+      <div class="image-overlay" style="max-width: 400px; margin: 0 auto;">
+        <img src="kimhogle4.jpg" alt="Kimberly Hogle" />
+      </div>
+      <h1>Kimberly Hogle</h1>
+      <p><strong>Full-Stack Developer</strong></p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Howdy! I'm a passionate developer with a love for clean code, clever solutions, and dark aesthetics.
+        I specialize in building full-stack applications, crafting accessible user interfaces, and contributing to open-source projects.
+        When I’m not coding, you’ll find me enjoying a good book or movie, exercising, spending time with family, or learning a new skill.
+      </p>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Software Development</li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: JavaScript, C#, HTML/CSS, SQL</li>
+        <li>Tools: Git, VSCode, Visual Studios</li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <p><strong>Software Engineer</strong> – Moonlit Software Studios (2022–Present)</p>
+      <ul>
+        <li>Led the front-end development of a dark-themed productivity suite with React & Tailwind</li>
+        <li>Implemented API integrations and optimized performance, reducing load times by 35%</li>
+        <li>Mentored junior devs on Git best practices and component architecture</li>
+      </ul>
+
+      <p><strong>Junior Web Developer</strong> – Nightshade Media Lab (2020–2022)</p>
+      <ul>
+        <li>Maintained a custom CMS platform built on Django and PostgreSQL</li>
+        <li>Created responsive designs with Sass and BEM methodology</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>B.S. in Computer Science</strong> – Crypt Hollow University (2016–2020)</p>
+      <p>Capstone: “Designing for the Dark: User Experience in Horror-Themed Interfaces”</p>
+    </section>
 </body>
+    <footer>
+      <hr />
+      <p>&copy; 2025 Kimberly Hogle – Crafted with code and creativity</p>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Load saved preference
+  if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light-mode');
+  }
+
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    const mode = body.classList.contains('light-mode') ? 'light' : 'dark';
+    localStorage.setItem('theme', mode);
+  });
+</script>
+</body>
+
+
+
+
+
 </html>

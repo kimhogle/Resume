@@ -1,1 +1,1 @@
-This is just a simple practice. I am refreshing my memory of VS Code, GitHub, Git Bash, HTML, CSS, JavaScript, etc.
+This is an updated resume I built in May of 2025. It showcases my personality and shows previous work experience, interests, and skills.
