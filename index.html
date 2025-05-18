@@ -9,62 +9,42 @@
     <title>Index</title>
 </head>
 <body>
-    <a href="projects.html">Projects</a>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+</style>
 
 
 
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="aboutme.html">About Me</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+  <nav class="navbar">
+    <div class="brand">Home</div>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-
-
-
+  <script src="javascript.js"></script>
 
 
 
 
-  <button id="theme-toggle" class="button" style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
-    Toggle Theme
-  </button>
+
+
+
+
 
   <div class="container">
     <header style="text-align: center; margin-bottom: 2rem;">
       <div class="image-overlay" style="max-width: 400px; margin: 0 auto;">
-        <img src="kimhogle4.jpg" alt="Kimberly Hogle" />
+        <img src="kimhogle4.jpg" alt="Kimberly Hogle"   style="border-radius: 50%;"" />
       </div>
       <h1>Kimberly Hogle</h1>
       <p><strong>Full-Stack Developer</strong></p>
     </header>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Howdy! I'm a passionate developer with a love for clean code, clever solutions, and dark aesthetics.
-        I specialize in building full-stack applications, crafting accessible user interfaces, and contributing to open-source projects.
-        When I’m not coding, you’ll find me enjoying a good book or movie, exercising, spending time with family, or learning a new skill.
-      </p>
-    </section>
-
-    <section>
-      <h2>Interests</h2>
-      <ul>
-        <li>Web Development</li>
-        <li>Software Development</li>
-
-      </ul>
-    </section>
 
     <section>
       <h2>Skills</h2>
@@ -77,29 +57,48 @@
 
     <section>
       <h2>Work Experience</h2>
-      <p><strong>Software Engineer</strong> – Moonlit Software Studios (2022–Present)</p>
+      <p><strong>Kids Club Staff</strong> – YMCA of Greater Cincinnati (August 2024–Present)</p>
       <ul>
-        <li>Led the front-end development of a dark-themed productivity suite with React & Tailwind</li>
-        <li>Implemented API integrations and optimized performance, reducing load times by 35%</li>
-        <li>Mentored junior devs on Git best practices and component architecture</li>
+        <li>Ensuring the safety of all children visiting the Kids Club.</li>
+        <li>Creating a fun and engaging environment for children.</li>
+        <li>Keeping a clean and fun environment where kids love to visit.</li>
+        <li>Assisting children with activities and games.</li>
+        <li>Communicating with parents and guardians about their children's experiences.</li>
+        <li>Handling any issues or conflicts that arise among children.</li>
+        <li>Maintaining a positive attitude and professionalism while interacting with children and parents.</li>
+        <li>Adhering to all safety protocols and guidelines.</li>
       </ul>
 
-      <p><strong>Junior Web Developer</strong> – Nightshade Media Lab (2020–2022)</p>
+      <p><strong>Amazon Flex Delivery Driver</strong> – Amazon Flex (January 2024-Present)</p>
       <ul>
-        <li>Maintained a custom CMS platform built on Django and PostgreSQL</li>
-        <li>Created responsive designs with Sass and BEM methodology</li>
+        <li>Picking up packages from Amazon delivery stations and delivering them to customers.</li>
+        <li>Ensuring packages are delivered on time and in good condition.</li>
+        <li>Providing excellent customer service during deliveries.</li>
+        <li>Maintaining a clean and organized vehicle.</li>
+        <li>Adhering to all traffic laws and safety regulations.</li>
+        <li>Communicating with Amazon support for any issues during deliveries.</li>
+        <li>Using the Amazon Flex app to manage deliveries and track performance.</li>
+        <li>Managing time effectively to complete deliveries within the scheduled time frame.</li>
+        <li>Following all safety protocols to ensure the safety of packages and customers.</li>
+        <li>Maintaining a positive attitude and professionalism while interacting with customers.</li>
       </ul>
     </section>
 
     <section>
       <h2>Education</h2>
-      <p><strong>B.S. in Computer Science</strong> – Crypt Hollow University (2016–2020)</p>
-      <p>Capstone: “Designing for the Dark: User Experience in Horror-Themed Interfaces”</p>
+      <p><strong>Certificate in Software Development with C#</strong> – Code:YOU (2025)</p>
+        <img src="kim_hogle-softcert-spring2024-s435121.jpg" alt="Kimberly Hogle Code:YOU Software Development Certificate" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;" />
+
+        <p><strong>Certificate in CIT Fundamentals</strong> - Gateway CTC (2019) </p>
+        <img src="citfun.jpg"   alt="Kimberly Hogle Gateway CTC CIT Fundamentals Certificate" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;" />
+
+        <p><strong>Certificate in Computer Technician</strong> - Gateway CTC (2019) </p>
+        <img src="ctc.jpg"  alt="Kimberly Hogle Gateway CTC Computer Technician Certificate" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;" />
     </section>
 </body>
     <footer>
       <hr />
-      <p>&copy; 2025 Kimberly Hogle – Crafted with code and creativity</p>
+      <p>&copy; 2025 Kimberly Hogle</p>
     </footer>
   </div>
 
@@ -117,21 +116,7 @@
 
 
 
-<script>
-  const toggle = document.getElementById('theme-toggle');
-  const body = document.body;
 
-  // Load saved preference
-  if (localStorage.getItem('theme') === 'light') {
-    body.classList.add('light-mode');
-  }
-
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    const mode = body.classList.contains('light-mode') ? 'light' : 'dark';
-    localStorage.setItem('theme', mode);
-  });
-</script>
 </body>
 
 
