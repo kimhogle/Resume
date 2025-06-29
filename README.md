@@ -1,1 +1,1 @@
-This is an updated resume I built in May of 2025. It showcases my personality and shows previous work experience, interests, and skills.
+This is an updated resume site I began in May of 2025. It showcases my personality and style, and also provides previous work experience, links to projects, interests, and skills.
