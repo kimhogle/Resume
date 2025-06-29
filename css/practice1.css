@@ -68,7 +68,7 @@ h2 { font-size: 1.5rem; }
 p {
   margin-bottom: 1.2rem;
   color: #ccc;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 /* === LINKS === */
@@ -77,6 +77,7 @@ a {
   text-decoration: none;
   position: relative;
   transition: all 0.3s ease;
+  font-size: 2rem ;
 }
 
 a::after {
@@ -259,4 +260,35 @@ footer {
     margin-bottom: 3rem;
     padding-top: 2rem;
   }
+}
+
+
+.repo-card {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.repo-card:hover {
+  transform: scale(1.02);
+}
+.repo-card h3 a {
+  color: #830000;
+  text-decoration: none;
+}
+.repo-card p {
+  color: red;
+}
+
+
+.repo-list {
+/* Desktop */
+@media (min-width: 768px) {
+  .repo-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .repo-list { display: flex; flex-direction: column; gap: 1rem; }
+}
 }
